@@ -90,9 +90,9 @@ main{
             border: 2px solid var(--color-brand);
         }
     }
-}
 
-.botao{
+
+ .botao{
     background: var(--color-brand);
     border: none;
     color: var(--always-white);
@@ -108,9 +108,8 @@ main{
         background: var(--color-brand-hover);
     }
     
+ }
 }
-
-
 .list{
     .item{
         background: var(--background-secondary);
@@ -171,4 +170,18 @@ main{
             }
         }
     }
+}
+
+.waening {
+    background: var(--color-brand);
+    color: var(--always-white);
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1.2rem;
+    margin-top: 2.4rem;
+
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity .4s ease, transform .4s ease;
 }
