@@ -11,4 +11,27 @@ function addItem(){
     items.push(item)
 
     document.querySelector("#item").value = ""
+
+    showitemslist{}
 }
+
+    functionshowItemslist(){
+        const sectionList = document.querySelector(".list")
+        sectionList.textContent = ""
+
+            items.map((item, index) => {
+                sectionList.innerHTML = ` <div class="item">
+                <div>
+                <input type="checkbox" name="list" id="item-${index}" > 
+                <div class="custom-checkbox">
+                    <img src="assents/checked.svg" alt="checked">
+                </div>
+                <label for="item-${index}">${item.name}</label>
+                </div>
+                <button>
+                    <img src="assents/trash-icon.svg" alt="">
+                </button>
+
+            </div>`
+        })
+    }

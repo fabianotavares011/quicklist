@@ -134,11 +134,11 @@ main{
             display: none;
         }
 
-        .custom-checkbox{
+        .custom-checkbox {
             width: 1.6rem;
             height: 1.6rem;
             border: 1px solid var(--border-primary);
-            border-radius: 1.6rem;
+            border-radius: .6rem;
         }
 
         label {
@@ -146,6 +146,7 @@ main{
         }
 
         div:has(input:checkbox) {
+
             .custom-checkbox{
                 background: var(--color-brand);
                 border: 1px solid var(--color-brand);
@@ -166,14 +167,14 @@ main{
 
             img{
                 width: 1.6rem;
-                opacity: 0.7;
+                opacity: .7;
             }
         }
     }
 }
 
 .warning {
-    background: var(--color-brand);
+    background: var(--color-danger);
     color: var(--always-white);
     padding: 1.2rem;
     display: flex;
@@ -184,6 +185,7 @@ main{
     opacity: 1;
     transform: translateY(0);
     transition: opacity .4s ease, transform .4s ease;
+}
 
     div {
         display: flex;
@@ -201,12 +203,12 @@ main{
         color: var(--always-white);
         cursor: pointer;
     }
-}
 
-.hide-warning {
+
+ .hide-warning {
     opacity: 0;
-    transform: translateY(-18px);
-}
+    transform: translateY(-10px);
+ }
 
 
 @media (min-width:627px) {
@@ -224,11 +226,10 @@ main{
 
     input {
         margin-bottom: 0;
-        grid-column:1/8 ;
+        grid-column: 1 / 8 ;
     }
 
     button {
-        grid-column: 8/11;
+        grid-column: 8 / 11;
     }
-
-}
+ }
