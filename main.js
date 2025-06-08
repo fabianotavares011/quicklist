@@ -1,7 +1,12 @@
 const items = []
 
 function addItem(){ 
-    const itemName = document.querySelector("#item").value
+    const itemName = document.querySelector("#item").value 
+
+    if (itemName === ""){
+        alert ("Não e posivel adicionar um item vazio")
+        return
+    }
 
     const intem = {
         name : itemName,
