@@ -28,10 +28,21 @@ function addItem(){
                 </div>
                 <label for="item-${index}">${item.name}</label>
                 </div>
-                <button>
+
+                <button onclick="removeItem('${item.name}')">
                     <img src="assents/trash-icon.svg" alt="">
                 </button>
 
             </div>`
         })
+    }
+
+    function removeItem(itemName) {
+        const itemIndex = items.findIndex((item) => item.name === itemName)
+
+        if (itemIndex !== -1) {
+            items.splice(itemIndex, 1)
+        }
+
+        showitemslist()
     }
